@@ -1,0 +1,187 @@
+[gd_scene format=3 uid="uid://b0q0l5hnxbskn"]
+
+[ext_resource type="Script" uid="uid://beno1aoifkv3q" path="res://Script/main.gd" id="1_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://bl6bfyc0vnjpm" path="res://Sprites/Pedra.png.png" id="2_h2yge"]
+
+[node name="Main" type="Control" unique_id=246603782]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0xm2m")
+
+[node name="Button" type="Button" parent="." unique_id=1010521290]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 400.0
+offset_right = 500.0
+offset_bottom = 460.0
+text = "Minerar"
+
+[node name="Pedra" type="Sprite2D" parent="." unique_id=1835709391]
+position = Vector2(405.00003, 304)
+scale = Vector2(0.65625006, 0.653409)
+texture = ExtResource("2_h2yge")
+region_enabled = true
+region_rect = Rect2(87, 454, 183, 170)
+
+[node name="Pedra2" type="Sprite2D" parent="." unique_id=1298951369]
+visible = false
+position = Vector2(405.00003, 304)
+scale = Vector2(0.65625006, 0.653409)
+texture = ExtResource("2_h2yge")
+region_enabled = true
+region_rect = Rect2(389, 440, 190, 181)
+
+[node name="Pedra3" type="Sprite2D" parent="." unique_id=16129760]
+visible = false
+position = Vector2(405.00003, 304)
+scale = Vector2(0.65625006, 0.653409)
+texture = ExtResource("2_h2yge")
+region_enabled = true
+region_rect = Rect2(663, 457, 177, 167)
+
+[node name="Pedra4" type="Sprite2D" parent="." unique_id=575206445]
+visible = false
+position = Vector2(405.00003, 304)
+scale = Vector2(0.65625006, 0.653409)
+texture = ExtResource("2_h2yge")
+region_enabled = true
+region_rect = Rect2(950, 465, 170, 159)
+
+[node name="ContadorPedras" type="Label" parent="." unique_id=172150541]
+layout_mode = 0
+offset_left = 277.0
+offset_top = 53.0
+offset_right = 525.0
+offset_bottom = 82.0
+text = "Pedras: 0"
+horizontal_alignment = 1
+
+[node name="ContadorGold" type="Label" parent="." unique_id=1347127723]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 54.0
+offset_right = 95.0
+offset_bottom = 82.0
+text = "Gold: 0"
+
+[node name="vender" type="Button" parent="." unique_id=1499359097]
+layout_mode = 0
+offset_left = 975.0
+offset_top = 83.0
+offset_right = 1120.0
+offset_bottom = 141.0
+text = "Vender pedras"
+
+[node name="MensagemVenda" type="Label" parent="." unique_id=1646696810]
+visible = false
+layout_mode = 0
+offset_left = 967.0
+offset_top = 39.0
+offset_right = 1127.0
+offset_bottom = 62.0
+text = "Pedras insuficientes."
+
+[node name="Menuvenda" type="Panel" parent="." unique_id=36242526]
+visible = false
+layout_mode = 0
+offset_left = 795.0
+offset_top = 55.0
+offset_right = 1153.0
+offset_bottom = 593.0
+
+[node name="MaterialantAnterior" type="Button" parent="Menuvenda" unique_id=341080573]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 126.0
+offset_right = 113.0
+offset_bottom = 157.0
+text = "<---"
+
+[node name="Materialnone" type="Label" parent="Menuvenda" unique_id=1570867079]
+layout_mode = 0
+offset_left = 134.0
+offset_top = 130.0
+offset_right = 189.0
+offset_bottom = 156.0
+text = "PEDRA"
+
+[node name="Materialprox" type="Button" parent="Menuvenda" unique_id=1465864760]
+layout_mode = 0
+offset_left = 206.0
+offset_top = 126.0
+offset_right = 239.0
+offset_bottom = 157.0
+text = "--->"
+
+[node name="Quantidade" type="LineEdit" parent="Menuvenda" unique_id=1501340180]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 249.0
+offset_right = 195.5
+offset_bottom = 280.0
+text = "0"
+
+[node name="Limparquantidade" type="Button" parent="Menuvenda" unique_id=950255703]
+layout_mode = 0
+offset_left = 203.0
+offset_top = 249.0
+offset_right = 221.0
+offset_bottom = 280.0
+text = "X"
+
+[node name="Mais1" type="Button" parent="Menuvenda" unique_id=1090737281]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 323.0
+offset_right = 55.0
+offset_bottom = 354.0
+text = "+1"
+
+[node name="Mais10" type="Button" parent="Menuvenda" unique_id=417611741]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 323.0
+offset_right = 99.0
+offset_bottom = 354.0
+text = "+10"
+
+[node name="Mais100" type="Button" parent="Menuvenda" unique_id=819079077]
+layout_mode = 0
+offset_left = 107.0
+offset_top = 323.0
+offset_right = 152.0
+offset_bottom = 354.0
+text = "+100
+"
+
+[node name="MaxQuantidade" type="Button" parent="Menuvenda" unique_id=1318970566]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 323.0
+offset_right = 205.0
+offset_bottom = 354.0
+text = "MAX"
+
+[node name="ConfirmarVenda" type="Button" parent="Menuvenda" unique_id=969536151]
+layout_mode = 0
+offset_left = 131.0
+offset_top = 442.0
+offset_right = 202.0
+offset_bottom = 473.0
+text = "VENDER"
+
+[node name="FecharMenu" type="Button" parent="Menuvenda" unique_id=1061217585]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 18.0
+offset_right = 26.0
+offset_bottom = 49.0
+text = "X"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="vender" to="." method="_on_vender_pressed"]
+[connection signal="pressed" from="Menuvenda/FecharMenu" to="." method="_on_fechar_menu_pressed"]
